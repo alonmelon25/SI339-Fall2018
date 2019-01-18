@@ -1,0 +1,14 @@
+body{
+  background: grey;
+  color: yellow;
+  size: 150%;
+  margin: 5%;
+}
+
+a:focus{
+  border: 1px splid;
+}
+
+p{
+  font-family: Arial;
+}
