@@ -1,32 +1,57 @@
 body{
-	background: black;
+	background: #203146;
 	color: white;
 	size: 150%;
 	margin: 5%;
 }
 
-li{
-	text-decoration: none;
-	display:inline;
-	background-color: white;
-	color: black;
-}
-
-a:focus{
-	border: 1px solid;
-}
-
-
-p{
-	font-family: Arial;
+h1 {
+	text-align: center;
 }
 
 .current{
-	color: #00000;
-	background: blue;
+	display: flex;
+	color: #000000;
+	background: #203146;
+	text-align: right;
+	margin-right: 20px;
+}
+
+.current .nav_logo{
+	margin-left: 20px;
+}
+
+.current a{
+	color: white;
+	padding: 10px;
+}
+
+.current li:first-child{
+	margin-right: auto;
+}
+
+.home_logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p{
+	text-align: center;
 }
 
 .skip{
+	color: white;
 	position: relative;
-	left: -2000px;
+}
+
+.social_media{
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.social_media a{
+	padding: 5px;
 }
