@@ -1,0 +1,151 @@
+header, footer{
+	background: blue;
+	color: white;
+}
+
+footer{
+	min-height: 5vh;
+}
+h1{
+	text-align: center;
+	font-size: 150%;
+	padding:2px;
+	border: 20px solid black;
+}
+
+main{
+	min-height: 80vh;
+	background: #E6E6E6;
+}
+
+nav ul li{
+	border: 2px solid black;
+	min-height: 50px;
+	line-height: 50px;
+	border-width: 2px 2px 0px 2px;
+	text-align: center;
+	background-image: linear-gradient(to bottom right, blue, lightblue);
+
+}
+
+.skiptocontent a{
+	display:block;
+	background: black;
+	color:white;
+	text-align: center; 
+}
+.left, .right{
+	min-height:30vh;
+	border: 1px solid black;
+}
+
+.calendar{
+	height: 300px;
+	width: 100%
+}
+
+.month{
+	display:none;
+}
+
+@media screen and (min-width: 700px) { 
+.skiptocontent a {
+	padding:6px;
+	position: absolute;
+	top:-40px;
+	left:0px;
+	color:white;
+	border-right:1px solid white;
+	border-bottom:1px solid white;
+	border-bottom-right-radius:8px;
+	background:#BF1722;
+	-webkit-transition: top 2s ease-out;
+    transition: top 2s ease-out;
+
+
+
+    z-index: 100;
+}
+
+.skiptocontent a:focus {
+	position:absolute;
+	left:0px;
+	top:0px;
+	/*-webkit-transition: top 1s ease-in;
+    transition: top 1s ease-in;*/
+}
+	.agenda{
+		display: none;
+	}
+
+	.month{
+		display: block;
+	}
+
+	main{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.bottom{
+		grid-column: 1 / span 2; 
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	h1{
+		border:none;
+	} 
+	main{
+		grid-template-columns: 2fr 1fr;
+	}
+	nav ul{
+		display: flex;
+		justify-content: flex-end;
+	}
+	nav ul li{
+		display: inline-block;
+		width:25%;
+		background: blue;
+		padding: 10px;
+		min-height: 50px;
+		line-height: 50px;
+		border-width: 2px;
+		text-align: center;
+	background-image: -webkit-linear-gradient(top left, blue, lightblue);
+	background-image: -o-linear-gradient(top left, blue, lightblue);
+	background-image: linear-gradient(to bottom right, blue, lightblue);
+	
+		
+	}
+	header{
+		padding: 10px;
+		display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	h1{
+		color:red;
+	}
+	
+  .skiptocontent a  {
+	padding:6px;
+	position: absolute;
+	top:-40px;
+	left:0px;
+	color:white;
+	border-right:1px solid white;
+	border-bottom:1px solid white;
+	border-bottom-right-radius:8px;
+	background:#BF1722;
+    -moz-transition: none;
+    -webkit-transition: none;
+    transition: none;
+    z-index: 1;
+	}
+  }
+
+
